@@ -47,3 +47,27 @@ const hobbies = ['Sports', 'Cookings'];
 for (let hobby of hobbies) {
     console.log(hobby);
 }
+
+console.log(hobbies.map(hobby => {
+    return 'Hobby : ' + hobby;
+}));
+
+hobbies.push('Programming');
+
+console.log(hobbies);
+
+const coppiedArray = [hobbies];
+
+const spreadArray = [...hobbies];
+
+console.log(coppiedArray);
+console.log(spreadArray);
+
+const coppiedPerson = {...person};
+console.log(coppiedPerson);
+
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray(1,1,4,5));
